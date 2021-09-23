@@ -1,4 +1,4 @@
-# Nerfies
+# LatentCLR
 
 This is the repository that contains source code for the [LatentCLR website](https://gulperii.github.io/githubio/).
 
