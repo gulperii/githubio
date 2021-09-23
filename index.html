@@ -42,7 +42,7 @@
     <script src="./static/js/index.js"></script>
 </head>
 <body>
-
+<!-- BAAAAAAAAAAAAAAAAAAAAAK -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -114,7 +114,7 @@
                         <div class="publication-links">
                             <!-- PDF Link. -->
                             <span class="link-block">
-                <a href="https://arxiv.org/abs/2104.00820"
+                <a href="https://arxiv.org/pdf/2104.00820.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -131,7 +131,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-                            <!-- Video Link. -->
+                            <!-- Video Link. ADDDDDDDDDDDDDDDDDDD -->
                             <span class="link-block">
                 <a href=".com"
                    class="external-link button is-normal is-rounded is-dark">
@@ -175,64 +175,6 @@
 </section>
 
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <div id="results-carousel" class="carousel results-carousel">
-                <div class="item item-steve">
-                    <video poster="" id="steve" autoplay controls muted loop height="100%">
-                        <source src=".mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-                <div class="item item-chair-tp">
-                    <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
-                        <source src=".mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-                <div class="item item-shiba">
-                    <video poster="" id="shiba" autoplay controls muted loop height="100%">
-                        <source src=".mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-                <div class="item item-fullbody">
-                    <video poster="" id="fullbody" autoplay controls muted loop height="100%">
-                        <source src=".mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-                <div class="item item-blueshirt">
-                    <video poster="" id="blueshirt" autoplay controls muted loop height="100%">
-                        <source src=".mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-                <div class="item item-mask">
-                    <video poster="" id="mask" autoplay controls muted loop height="100%">
-                        <source src=".mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-                <div class="item item-coffee">
-                    <video poster="" id="coffee" autoplay controls muted loop height="100%">
-                        <source src=".mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-                <div class="item item-toby">
-                    <video poster="" id="toby" autoplay controls muted loop height="100%">
-                        <source src=".mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <section class="section">
     <div class="container is-max-desktop">
         <!-- Abstract. -->
@@ -264,21 +206,64 @@
             </div>
         </div>
         <!--/ Abstract. -->
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-steve">
+                        <img src="static/images/teaser_biggan1.png">
+                    </div>
+                    <div class="item item-chair-tp">
+                        <img src="static/images/teaser_biggan2.png">
+                    </div>
+                    <div class="item item-shiba">
+                        <img src="static/images/teaser_car.png">
+                    </div>
+                    <div class="item item-fullbody">
+                        <img src="static/images/teaser_cat.png">
+                    </div>
+                    <div class="item item-blueshirt">
+                        <img src="static/images/teaser_ffhq.png">
 
+                    </div>
+                    <div class="item item-mask">
+                        <img src="static/images/teaser_ffhq_boy.png">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <!-- Paper video. -->
         <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-                <h2 class="title is-3">Video</h2>
+                <h2 class="title is-3">StyleGAN2 Directions</h2>
                 <div class="publication-video">
-                    <img src="images/teaser_biggan1.jpg"
-     alt="The head and torso of a dinosaur skeleton;
-          it has a large head with long sharp teeth"
-     width="400"
-     height="341">
+                    <img src="static/images/stylegan_ours.png" height="940">
+                </div>
+                <div class="publication-video">
+                    <img src="static/images/stylegan_others.png">
                 </div>
             </div>
         </div>
         <!--/ Paper video. -->
+           <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">BigGAN Directions - Class Agnostic</h2>
+                <div class="publication-video">
+                    <img src="static/images/class_agnostic.png">
+                </div>
+            </div>
+        </div>
+
+              <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">BigGAN Directions - Class Specific</h2>
+                <div class="publication-video">
+                    <img src="static/images/class_specific.png">
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
