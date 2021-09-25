@@ -111,7 +111,9 @@ body {
 .publication-body img {
     object-fit: contain ;
 }
-
+.publication-body2 img {
+    object-fit: scale-down ;
+}
 .results-carousel {
   overflow: hidden;
 }

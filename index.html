@@ -43,45 +43,7 @@
 </head>
 <body>
 <!-- BAAAAAAAAAAAAAAAAAAAAAK -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-    <div class="navbar-menu">
-        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-            <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-            </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                    More Research
-                </a>
-                <div class="navbar-dropdown">
-                    <a class="navbar-item" href="https://hypernerf.github.io">
-                        HyperNeRF
-                    </a>
-                    <a class="navbar-item" href="https://nerfies.github.io">
-                        Nerfies
-                    </a>
-                    <a class="navbar-item" href="https://latentfusion.github.io">
-                        LatentFusion
-                    </a>
-                    <a class="navbar-item" href="https://photoshape.github.io">
-                        PhotoShape
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</nav>
+<
 
 
 <section class="hero">
@@ -232,30 +194,29 @@
 
                 </div>
             </div>
+
+
         </div>
-        <!-- Paper video. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">StyleGAN2 Directions</h2>
-                <div class="publication-video">
-                    <img src="static/images/stylegan_ours.png" height="940">
-                </div>
-                <div class="publication-video">
-                    <img src="static/images/stylegan_others.png">
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h2 class="title is-3">LatentCLR Framework</h2>
+
+                <div class="content has-text-justified">
+                    <img src="static/images/LatentCLR.png">
+                    <p>
+                        Each latent code is passed through direction models and up to
+                        a target feature layer of the GAN to obtain intermediate representations of
+                        edited codes. Then, the effects
+                        of direction models are computed by subtracting the representation of the original latent
+                        code.
+                        Finally, pairs produced by the
+                        same model are considered as positive, and others as negative, in a contrastive loss.
+                    </p>
                 </div>
             </div>
         </div>
-
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">BigGAN Directions - Class Specific</h2>
-                <div class="publication-video">
-                    <img src="static/images/class_specific.png">
-                </div>
-            </div>
-        </div>
-
     </div>
+
 </section>
 
 
@@ -269,6 +230,9 @@
                 from the one ImageNet class are applicable to a variety of ImageNet
                 classes
             </p>
+            <div class="publication-body">
+                <img src="static/images/class_agnostic.png" height="907">
+            </div>
         </div>
         <div class="content has-text-centered">
 
@@ -279,14 +243,8 @@
             <div class="column">
                 <div class="content">
                     <h3 class="title is-4">Zoom</h3>
-                    <p>
-                        Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                        would be impossible without nerfies since it would require going through a wall.
-                    </p>
-                    <video id="dollyzoom" autoplay controls muted loop height="100%">
-                        <source src="https://imgflip.com/gif/5o1emn"
-                                type="video/mp4">
-                    </video>
+
+                    <img src="static/images/5o1f3s.gif">
                 </div>
             </div>
             <!--/ Visual Effects. -->
@@ -296,14 +254,8 @@
                 <h3 class="title is-4">Rotate</h3>
                 <div class="columns is-centered">
                     <div class="column content">
-                        <p>
-                            As a byproduct of our method, we can also solve the matting problem by ignoring
-                            samples that fall outside of a bounding box during rendering.
-                        </p>
-                        <video id="matting-video" controls height="100%">
-                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/matting.mp4"
-                                    type="video/mp4">
-                        </video>
+
+                        <img src="static/images/5o1f3s.gif">
                     </div>
 
                 </div>
@@ -316,14 +268,7 @@
             <div class="column">
                 <div class="content">
                     <h3 class="title is-4">Contrast</h3>
-                    <p>
-                        Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                        would be impossible without nerfies since it would require going through a wall.
-                    </p>
-                    <video id="dollyzoom" autoplay controls muted loop height="100%">
-                        <source src="https://imgflip.com/gif/5o1emn"
-                                type="video/mp4">
-                    </video>
+                    <img src="static/images/5o1f3s.gif">
                 </div>
             </div>
             <!--/ Visual Effects. -->
@@ -333,98 +278,79 @@
                 <h3 class="title is-4">Sitting</h3>
                 <div class="columns is-centered">
                     <div class="column content">
-                        <p>
-                            As a byproduct of our method, we can also solve the matting problem by ignoring
-                            samples that fall outside of a bounding box during rendering.
-                        </p>
-                        <video id="matting-video" controls height="100%">
-                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/matting.mp4"
-                                    type="video/mp4">
-                        </video>
+                        <img src="static/images/5o1f3s.gif">
                     </div>
 
                 </div>
             </div>
         </div>
         <!-- Animation. -->
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div class="column is-full-width">
                 <h2 class="title is-3">Diversity of the directions</h2>
 
                 <div class="content has-text-justified">
                     <p>
-                        We can also animate the scene by interpolating the deformation latent codes of two input
-                        frames. Use the slider here to linearly interpolate between the left frame and the right
-                        frame.
+                        We propose to use contrastive learning on feature divergences
+                        to discover interpretable directions in the latent
+                        space of pre-trained GAN models such as Style-
+                        GAN2 and BigGAN.
                     </p>
                 </div>
-                <div class="columns is-vcentered interpolation-panel">
-                    <div class="column is-3 has-text-centered">
-                        <img src="https://homes.cs.washington.edu/~kpar/nerfies/images/interpolate_start.jpg"
-                             class="interpolation-image"
-                             alt="Interpolate start reference image."/>
-                        <p>Start Frame</p>
-                    </div>
-                    <div class="column interpolation-video-column">
-                        <div id="interpolation-image-wrapper">
-                            Loading...
+                <div class="content has-text-justified">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">StyleGAN2 Directions</h2>
+                            <div class="publication-body">
+                                <img src="static/images/stylegan_ours.png" height="940">
+                            </div>
+                            <div class="publication-body2">
+                                <img src="static/images/stylegan_others.png" height="1440">
+                            </div>
                         </div>
-                        <input class="slider is-fullwidth is-large is-info"
-                               id="interpolation-slider"
-                               step="1" min="0" max="100" value="0" type="range">
                     </div>
-                    <div class="column is-3 has-text-centered">
-                        <img src="https://homes.cs.washington.edu/~kpar/nerfies/images/interpolate_end.jpg"
-                             class="interpolation-image"
-                             alt="Interpolation end reference image."/>
-                        <p class="is-bold">End Frame</p>
+
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">BigGAN Directions </h2>
+                            <div class="publication-body">
+                                <img src="static/images/class_specific.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <br/>
-                <!--/ Interpolating. -->
-
-
-                <!--/ Re-rendering. -->
 
             </div>
         </div>
-        <!--/ Animation. -->
+    </div>
+</section>
 
 
-        <!-- Concurrent Work. -->
-        <div class="columns is-centered">
-            <div class="column is-full-width">
-                <h2 class="title is-3">LatentCLR Framework</h2>
+<section>
 
-                <div class="content has-text-justified">
-                    <img src="static/images/LatentCLR.png">
-                    <p>
-                        Each latent code is passed through direction models and up to
-                        a target feature layer of the GAN to obtain intermediate representations of
-                        edited codes. Then, the effects
-                        of direction models are computed by subtracting the representation of the original latent code.
-                        Finally, pairs produced by the
-                        same model are considered as positive, and others as negative, in a contrastive loss.
-                    </p>
-                </div>
-            </div>
+    <div class="container is-max-desktop">
+        <!-- Re-rendering. -->
+        <h2 class="title is-3">Comparison with other methods</h2>
+        <div class="content has-text-justified">
+            <p>
+                We compare how the
+                directions found on FFHQ differ across methods. Figure shows the visual comparison between several
+                directions found in common by all methods, including the directions
+                Smile, Lipstick, Elderly, Curly Hair , and Young.
+            </p>
+            <img src="static/images/full_comparison.png">
         </div>
-        <!--/ Concurrent Work. -->
 
-        <div class="container is-max-desktop">
-            <!-- Re-rendering. -->
-            <h2 class="title is-3">Comparison with other methods</h2>
-            <div class="content has-text-justified">
-                <p>
-                    We compare how the
-                    directions found on FFHQ differ across methods. Figure shows the visual comparison between several
-                    directions found in common by all methods, including the directions
-                    Smile, Lipstick, Elderly, Curly Hair , and Young.
-                </p>
-                <img src="static/images/full_comparison.png">
-            </div>
-
-        </div>
     </div>
 
 </section>
