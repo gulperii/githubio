@@ -44,7 +44,6 @@
 <body>
 
 
-
 <section class="hero">
     <div class="hero-body">
         <div class="container is-max-desktop">
@@ -74,15 +73,7 @@
                     <div class="column has-text-centered">
                         <div class="publication-links">
                             <!-- PDF Link. -->
-                            <span class="link-block">
-                <a href="https://arxiv.org/pdf/2104.00820.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
+
                             <span class="link-block">
                 <a href="https://arxiv.org/abs/2104.00820"
                    class="external-link button is-normal is-rounded is-dark">
@@ -92,7 +83,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-                            <!-- Video Link. ADDDDDDDDDDDDDDDDDDD -->
+                            <!-- Video Link. -->
                             <span class="link-block">
                 <a href="https://youtu.be/QWTbYaaaVO0"
                    class="external-link button is-normal is-rounded is-dark">
@@ -181,15 +172,29 @@
                 <h2 class="title is-3">LatentCLR Framework</h2>
 
                 <div class="content has-text-justified">
-                    <img src="static/images/LatentCLR.png">
+                    <img src="static/images/latentclr_graph.png">
                     <p>
-                        Each latent code is passed through direction models and up to
-                        a target feature layer of the GAN to obtain intermediate representations of
-                        edited codes. Then, the effects
-                        of direction models are computed by subtracting the representation of the original latent
-                        code.
-                        Finally, pairs produced by the
-                        same model are considered as positive, and others as negative, in a contrastive loss.
+
+                    <ul>
+                        <li>Direction models on the space yielding latent code edits: <i>D<sub>k</sub></i></li>
+                        <li>Target feature layer in the pre-trained GAN: <i>G<sub>f</sub></i></li>
+                        <li>Contrastive objective function based on NT-Xent loss</li>
+                    </ul>
+
+                    <div class='box blue'> z<sub>1</sub> is passed through directions models to obtain edits.</div>
+                    <div class='box green'> Generator is fed with obtained z<sub>k</sub> until target layer.</div>
+                    <div class='box yellow'> Original z<sub>1</sub> is also fed into the generator.</div>
+                    <div class='box pink'> The effects of each direction model is calculated by
+                        obtained feature representations with a subtraction.
+                    </div>
+                    <div class='box purple'> Same steps are executed for all z<sub>k</sub> in the batch.</div>
+                    <div class='box gray'> Feature differences yielded by the same direction model
+                        is considered positive while others as negative pairs. The
+                        aim is to establish unique footprint in the target feature
+                        layer for each direction and semantic disentanglement.
+                    </div>
+
+
                     </p>
                 </div>
             </div>
